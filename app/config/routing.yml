@@ -1,0 +1,7 @@
+todo_com:
+    resource: "@TodoComBundle/Controller/"
+    type:   annotation
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

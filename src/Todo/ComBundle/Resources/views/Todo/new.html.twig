@@ -1,0 +1,48 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+<style>
+.block{
+        border:1px solid #000 ;
+        width:300px;
+}
+
+#todo_combundle_todo_name{ 
+  width: 217px;
+  margin: 10px;
+  float: right;
+}
+
+#todo_combundle_todo_date{ 
+  width: 217px;
+  margin: 10px;
+  float: right;
+}
+
+#todo_combundle_todo_description{ 
+  width: 217px;
+  margin: 10px;
+  float: right;
+}
+#todo_combundle_todo_submit {
+  float:right;
+clear:both ;
+}
+
+</style>
+<div class="block">
+
+
+    <h1>TODO.com</h1>
+
+    {{ form(form) }}
+
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('todo') }}">
+            Retour
+        </a>
+    </li>
+</ul>
+</div>
+{% endblock %}
